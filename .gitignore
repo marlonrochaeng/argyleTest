@@ -1,0 +1,12 @@
+# Don't track content of these folders
+.pytest_cache/
+.vscode/
+__pycache__/
+assets/
+venv/
+.DS_Store
+# Don't track this files
+*.pyc
+*.pyo
+*.log
+testExec.log
