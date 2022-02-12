@@ -1,4 +1,3 @@
-import imp
 from re import I
 import pytest
 from pages.home_page import HomePage
