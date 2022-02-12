@@ -26,5 +26,3 @@ class TestUserInfo(unittest.TestCase):
         self.home_page.go_to_users()
 
         assert self.users_page.is_user_info_correct('Bob Jones', 'Sample user')
-
-        

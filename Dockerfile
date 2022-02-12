@@ -3,7 +3,6 @@ FROM ubuntu:18.04
 COPY . /app
 WORKDIR /app
 
-#RUN mkdir __logger
 # install google chrome
 RUN apt-get update
 
@@ -29,4 +28,4 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["pytest", "-s" , "-v", "--browser", "chrome"]
+CMD ["pytest", "-s" , "-v", "--browser", "chrome", "--html=report.html"]
